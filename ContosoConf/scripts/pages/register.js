@@ -24,7 +24,9 @@ var checkPasswords = function () {
 
 var addPasswordInputEventListeners = function () {
     // TODO: Task 4 - Listen for the "input" event on passwordInput and confirmPasswordInput.
-    //       Call the checkPasswords function
+    passwordInput.addEventListener("input, checkPasswords, false");
+    // Call the checkPasswords function
+    confirmPasswordInput.addEventListener("input", checkPasswords, false);
 };
 
 var formSubmissionAttempted = function() {
