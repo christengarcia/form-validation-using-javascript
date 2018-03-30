@@ -14,6 +14,12 @@ var checkPasswords = function () {
 
     // TODO: Task 3 - If passwords don't match then display error message on confirmPasswordInput (using setCustomValidity)
     //                If passwords do match then clear the error message (setCustomValidity with empty string)
+    if (passwordMatch) {
+        // Clear any previous error message.
+        confirmPasswordInput.setCustomValidity("");
+    } else {
+        confirmPasswordInput.setCustomValidity("Your passwords don't match. Please type the same password again.");
+    }
 };
 
 var addPasswordInputEventListeners = function () {
