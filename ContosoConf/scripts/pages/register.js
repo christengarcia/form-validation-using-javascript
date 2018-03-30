@@ -4,7 +4,9 @@ var submitButton = form.querySelector("button");
     
 // TODO: Task 1 - Get the password <input> elements from the DOM by ID
 // var passwordInput = ...;
+var passwordInput = document.getElementById("password");
 // var confirmPasswordInput = ...;
+var confirmPasswordInput = document.getElementById("confirm-password");
 
 var checkPasswords = function () {
     // TODO: Task 2 - Compare passwordInput value to confirmPasswordInput value
