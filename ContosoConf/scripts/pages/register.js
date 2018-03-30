@@ -10,6 +10,7 @@ var confirmPasswordInput = document.getElementById("confirm-password");
 
 var checkPasswords = function () {
     // TODO: Task 2 - Compare passwordInput value to confirmPasswordInput value
+    var passwordMatch = passwordInput.value === confirmPasswordInput.value;
 
     // TODO: Task 3 - If passwords don't match then display error message on confirmPasswordInput (using setCustomValidity)
     //                If passwords do match then clear the error message (setCustomValidity with empty string)
